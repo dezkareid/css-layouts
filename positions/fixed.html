@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fixed position</title>
+</head>
+<body>
+	<style type="text/css">
+		html, body{
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+
+		.container {
+			background-color: blue;
+			margin-bottom: 2rem;
+			width: 75%;
+			height: 30%;
+		}
+
+		.fixed {
+			background-color: grey;
+			color: white;
+			height: 2rem;
+			width: 100%;
+			position: fixed;
+			bottom: 0px;
+		}
+	</style>
+	
+	<div class="container">
+		<div class="fixed">
+		Este elemento va estar en una posición fixed, se acomoda respecto al viewport
+	</div>
+	</div>
+	<div class="container">
+	</div>
+	<div class="container">
+	</div>
+	<div class="container">
+	</div>
+</html>

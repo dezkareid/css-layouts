@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Absolute position</title>
+</head>
+<body>
+	<style type="text/css">
+		html, body{
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+
+		.container {
+			background-color: blue;
+			margin-bottom: 2rem;
+			width: 75%;
+			height: 30%;
+		}
+
+		.positioned {
+			background-color: red;
+			width: 3rem;
+			height: 3rem;
+			position: absolute;
+			left: 1rem;
+			top: 1rem;
+		}
+
+		body>div:nth-child(3n){
+			position: relative;
+		}
+
+	</style>
+	<div class="container">
+	</div>
+	<div class="container">
+		<div class="positioned"></div>
+	</div>
+	<div class="container">
+		<div class="positioned"></div>
+	</div>
+</html>
