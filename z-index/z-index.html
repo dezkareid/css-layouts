@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>z-index</title>
+</head>
+<body>
+	<style type="text/css">
+		html, body{
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+
+		.container1 {
+			background-color: blue;
+			margin-bottom: 2rem;
+			width: 75%;
+			height: 30%;
+			position: relative;
+			z-index: 100;
+		}
+
+		.container2 {
+			background-color: yellow;
+			margin-bottom: 2rem;
+			width: 75%;
+			height: 30%;
+			z-index: 10;
+		}
+
+		.positioned1 {
+			background-color: green;
+			width: 3rem;
+			height: 3rem;
+			position: absolute;
+			left: 1rem;
+			top: 1rem;
+			z-index: 1;
+		}
+
+		.positioned2 {
+			background-color: red;
+			width: 3rem;
+			height: 3rem;
+			position: absolute;
+			left: 1rem;
+			top: 1rem;
+		}
+
+		.relative {
+			position: relative;
+		}
+
+
+	</style>
+	<div class="container1 relative">
+		<div class="container2">
+			<div class="positioned1"></div>
+		</div>
+		<div class="positioned2"></div>
+		
+	</div>
+
+</html>
